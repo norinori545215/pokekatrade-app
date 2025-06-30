@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+    <title>Feedback</title>
+</head>
+<body>
+    <h1>Feedback</h1>
+    <nav>
+        <a href="{{ url_for('dashboard') }}">Dashboard</a>
+    </nav>
+    <form method="post">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>
