@@ -24,6 +24,10 @@ def dashboard():
 def admin():
     return render_template("admin.html")
 
+@app.route("/graph")
+def graph():
+    return render_template("graph.html")
+
 @app.route("/feedback", methods=["GET", "POST"])
 def feedback():
     if request.method == "POST":
